@@ -11,6 +11,7 @@ settings.load_profile("ci")
 small_ints = integers(min_value=1, max_value=3)
 small_floats = floats(min_value=-100, max_value=100, allow_nan=False)
 med_ints = integers(min_value=1, max_value=20)
+positive_floats = floats(min_value=0.0001, max_value=100, allow_nan=False)
 
 
 def assert_close(a: float, b: float) -> None:
